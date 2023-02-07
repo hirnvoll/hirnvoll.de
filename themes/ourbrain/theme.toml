@@ -1,0 +1,10 @@
+name = "Ourbrain"
+description = "Official hirnvoll.de theme"
+homepage = "https://hirnvoll.de"
+tags = []
+features = []
+min_version = "0.110.0"
+
+[author]
+  name = "hirnvoll.de"
+  homepage = "https://hirnvoll.de"
