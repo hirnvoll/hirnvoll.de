@@ -1,7 +1,7 @@
 # Hugo config
 
 # Site Settings
-baseURL = 'https://hirnvoll.de/'
+baseURL = 'https://hirnvoll.github.io/hirnvoll.de'
 title = 'Hirnvoll Blog'
 
 # Name of Theme
