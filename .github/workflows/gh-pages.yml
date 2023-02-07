@@ -1,4 +1,4 @@
-name: github pages
+name: Deploy Hugo site via GitHub Pages
 
 on:
   push:
@@ -20,13 +20,7 @@ jobs:
         with:
           hugo-version: '0.110.0'
           extended: true
-      - uses: actions/cache/@v2
-        with:
-          path: /tmp/hugo_cache
-          key: ${{ runner.os }}-hugomod-${{ hasFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
-      
+
       - name: Build
         run: hugo --minify
 
