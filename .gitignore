@@ -1,4 +1,4 @@
 public/
-/resources/_gen/
+resources/_gen/
 hugo_stats.json
 .hugo_build.lock
