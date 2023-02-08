@@ -1,3 +1,16 @@
+:root {
+  /* :root should not contain variable colors;
+    have a look at MDN source code for reference. */
+  --white: #ffffff;
+  --almost-black: #161314;
+  --border-primary: #858585;
+}
+
 body {
-  background: grey;
+  background: var(--white);
+  color: var(--almost-black);
+}
+
+#page-footer {
+  border-top: 1px solid var(--border-primary);
 }
