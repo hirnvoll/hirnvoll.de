@@ -6,6 +6,8 @@
 
 * {
   line-height: calc(1em + 0.2rem);
+  color: var(--text-primary);
+  background-color: var(--background-primary);
 }
 
 img, picture, video, canvas, svg {
@@ -15,22 +17,26 @@ img, picture, video, canvas, svg {
 
 /* variables */
 /* colors */
-.light {
-  --text-primary: #1b1b1b;
-  --text-secondary: #4e4e4e;
-  --text-link: #0069c2;
-  --text-invert: #fff;
-  --background-primary: #fff;
-  --background-secondary: #f9f9fb;
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-primary: #1b1b1b;
+    --text-secondary: #4e4e4e;
+    --text-link: #0069c2;
+    --text-invert: #fff;
+    --background-primary: #fff;
+    --background-secondary: #f9f9fb;
+  }
 }
 
-.dark {
-  --text-primary: #fff;
-  --text-secondary: #cdcdcd;
-  --text-link: #8cb4ff;
-  --text-invert: #1b1b1b;
-  --background-primary: #1b1b1b;
-  --background-secondary: #343434;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #fff;
+    --text-secondary: #cdcdcd;
+    --text-link: #8cb4ff;
+    --text-invert: #1b1b1b;
+    --background-primary: #1b1b1b;
+    --background-secondary: #343434;
+  }
 }
 
 /* other stuff (yo)
@@ -41,6 +47,10 @@ img, picture, video, canvas, svg {
 
 body {
   width: 100%;
+}
+
+a {
+  color: var(--text-link);
 }
 
 .grid-wrapper {
@@ -65,5 +75,6 @@ body {
 
 .page-footer {
   grid-area: footer;
+  margin-top: 10px;
   border-top: 1px solid green;
 }
