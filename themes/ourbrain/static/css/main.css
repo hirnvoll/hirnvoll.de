@@ -15,6 +15,24 @@ img, picture, video, canvas, svg {
 
 /* variables */
 /* colors */
+.light {
+  --text-primary: #1b1b1b;
+  --text-secondary: #4e4e4e;
+  --text-link: #0069c2;
+  --text-invert: #fff;
+  --background-primary: #fff;
+  --background-secondary: #f9f9fb;
+}
+
+.dark {
+  --text-primary: #fff;
+  --text-secondary: #cdcdcd;
+  --text-link: #8cb4ff;
+  --text-invert: #1b1b1b;
+  --background-primary: #1b1b1b;
+  --background-secondary: #343434;
+}
+
 /* other stuff (yo)
 :root {
   /* :root should not contain variable colors;
@@ -29,17 +47,19 @@ body {
   display: grid;
   grid-template-areas:
     "main-menu main-menu main-menu"
-    "nav main aside"
+    ". main ."
     ". footer .";
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 .main-menu {
   grid-area: main-menu;
+  border: 3px solid blue;
 }
 
 .main {
   grid-area: main;
+  padding: 10px;
   border: 3px solid yellow;
 }
 
