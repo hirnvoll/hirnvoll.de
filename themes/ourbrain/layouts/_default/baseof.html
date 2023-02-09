@@ -2,10 +2,12 @@
 <html lang="{{ .Site.LanguageCode }}" xmlns="http://www.w3.org/1999/xhtml">
 {{ partial "head.html" . -}}
 <body>
-  {{ partial "nav.html" . -}}
-  <main>
-  {{- block "main" . -}}{{- end }}
-  </main>
-  {{ partial "footer.html" . -}}
+  <div class="grid-wrapper">
+    {{ partial "nav.html" . -}}
+    <main>
+    {{- block "main" . -}}{{- end }}
+    </main>
+    {{ partial "footer.html" . -}}
+  </div>
 </body>
 </html>

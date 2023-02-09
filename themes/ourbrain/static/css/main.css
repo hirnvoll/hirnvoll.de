@@ -11,6 +11,6 @@ body {
   color: var(--almost-black);
 }
 
-#page-footer {
+.page-footer {
   border-top: 1px solid var(--border-primary);
 }
