@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="{{ .Site.LanguageCode }}" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="{{ .Site.LanguageCode }}">
 {{ partial "head.html" . -}}
 <body>
-  <div class="grid-wrapper">
-    {{ partial "nav.html" . -}}
+  <section class="grid-wrapper">
+    {{ partial "main-menu.html" . -}}
     <main>
     {{- block "main" . -}}{{- end }}
     </main>
     {{ partial "footer.html" . -}}
-  </div>
+  </section>
 </body>
 </html>

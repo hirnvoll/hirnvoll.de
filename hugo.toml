@@ -3,6 +3,7 @@
 # Site Settings
 baseURL = 'https://hirnvoll.github.io/hirnvoll.de'
 title = 'Hirnvoll Blog'
+disableHugoGeneratorInject = true
 
 # Name of Theme
 theme = "ourbrain"

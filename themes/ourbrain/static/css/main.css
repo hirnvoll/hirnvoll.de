@@ -1,16 +1,49 @@
+/* opinionated, sensible CSS */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+* {
+  line-height: calc(1em + 0.2rem);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* variables */
+/* colors */
+/* other stuff (yo)
 :root {
   /* :root should not contain variable colors;
     have a look at MDN source code for reference. */
-  --white: #ffffff;
-  --almost-black: #161314;
-  --border-primary: #858585;
 }
 
 body {
-  background: var(--white);
-  color: var(--almost-black);
+  width: 100%;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-areas:
+    "main-menu main-menu main-menu"
+    "nav main aside"
+    ". footer .";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-menu {
+  grid-area: main-menu;
+}
+
+.main {
+  grid-area: main;
+  border: 3px solid yellow;
 }
 
 .page-footer {
-  border-top: 1px solid var(--border-primary);
+  grid-area: footer;
+  border-top: 1px solid green;
 }
