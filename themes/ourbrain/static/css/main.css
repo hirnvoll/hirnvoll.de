@@ -1,7 +1,6 @@
 /* opinionated, sensible CSS */
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
 }
 
 * {
@@ -21,8 +20,6 @@ img, picture, video, canvas, svg {
   :root {
     --text-primary: #1b1b1b;
     --text-secondary: #4e4e4e;
-    --text-link: #0069c2;
-    --text-invert: #fff;
     --background-primary: #fff;
     --background-secondary: #f9f9fb;
   }
@@ -32,39 +29,52 @@ img, picture, video, canvas, svg {
   :root {
     --text-primary: #fff;
     --text-secondary: #cdcdcd;
-    --text-link: #8cb4ff;
-    --text-invert: #1b1b1b;
     --background-primary: #1b1b1b;
     --background-secondary: #343434;
   }
 }
 
-/* other stuff (yo)
-:root {
-  /* :root should not contain variable colors;
-    have a look at MDN source code for reference. */
-}
-
 body {
   width: 100%;
-}
-
-a {
-  color: var(--text-link);
+  margin: 0;
+  padding: 0;
 }
 
 .grid-wrapper {
   display: grid;
   grid-template-areas:
-    "main-menu main-menu main-menu"
-    ". main ."
-    ". footer .";
-  grid-template-columns: 1fr 2fr 1fr;
+    "main-menu"
+    "main"
+    "footer";
+  grid-gap: 16px;
 }
 
 .main-menu {
+  display: grid;
   grid-area: main-menu;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+
   border: 3px solid blue;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-menu {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+}
+
+.main-menu__items {
+  grid-gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-menu__item {
+  display: grid;
 }
 
 .main {
@@ -73,7 +83,7 @@ a {
   border: 3px solid yellow;
 }
 
-.page-footer {
+.footer {
   grid-area: footer;
   margin-top: 10px;
   border-top: 1px solid green;

@@ -27,10 +27,15 @@ timeZone = 'Europe/Berlin'
     pageRef="/posts"
     weight = 2
   [[menu.main]]
+    name = "Resourcen"
+    url = "/resourcen"
+    pageRef = "/resourcen"
+    weight = 3
+  [[menu.main]]
     name = "About"
     url = "/about"
     pageRef="/about"
-    weight = 3
+    weight = 4
   [[menu.social]]
     name = 'Email'
     url = 'mailto:#'

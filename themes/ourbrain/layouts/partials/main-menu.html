@@ -1,7 +1,9 @@
 <nav aria-label="Main Navigation" class="main-menu">
-  <ul>
-  {{- range .Site.Menus.main }}
-    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-  {{- end }}
-  </ul>
+  <div class="main-menu__items">
+    <ul>
+    {{- range .Site.Menus.main }}
+      <li main-menu__item><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{- end }}
+    </ul>
+  </div>
 </nav>
