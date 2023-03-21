@@ -327,11 +327,11 @@ uglyURLs = false
     # Note: used for HTML head meta, JSON-LD,
     #       Open Graph, Atom, RSS
 
-    siteCreatedTime = "1969-07-20T20:17:43+00:00"
+    siteCreatedTime = "2023-02-21T20:00:00+00:00"
     # ATTENTION: keep this format, change
     #            the number
 
-    siteTwitter = "reuixiy"
+    #siteTwitter = "hirnvoll"
     # Note: used for Twitter Cards
 
 
@@ -1198,10 +1198,10 @@ uglyURLs = false
     iconBetweenYearAndAuthor = "heart"
     iconColor = "#f06292"
     # Enable heartbeat animation?
-    iconAnimation = true
+    iconAnimation = false
 
     # Display links to Hugo and MemE?
-    displayPoweredBy = true
+    displayPoweredBy = false
 
     displaySiteCopyright = true
 
