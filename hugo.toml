@@ -1191,7 +1191,7 @@ uglyURLs = false
     displayCopyleftSymbol = false
     displayCopyrightSymbol = true
 
-    displaySiteCreatedYear = true
+    displaySiteCreatedYear = false
 
     # Leave it empty("") if you don’t want
     # the icon
