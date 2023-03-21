@@ -1,0 +1,78 @@
+# Hugo config
+
+# Site Settings
+baseURL = 'https://hirnvoll.github.io/hirnvoll.de'
+title = 'Hirnvoll Blog'
+disableHugoGeneratorInject = true
+
+# Name of Theme
+theme = "ourbrain"
+
+# Language Settings and i18n
+languageCode = 'de-DE'
+defaultContentLanguage = 'de'
+defaultContentLanguageInSubdir = true
+# Used for building and front matter parsing
+timeZone = 'Europe/Berlin'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    pageRef="/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts"
+    pageRef="/posts"
+    weight = 2
+  [[menu.main]]
+    name = "Resourcen"
+    url = "/resourcen"
+    pageRef = "/resourcen"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    pageRef="/about"
+    weight = 4
+  [[menu.social]]
+    name = 'Email'
+    url = 'mailto:#'
+  [[menu.social]]
+    name = 'RSS'
+    url = '#'
+    weight = 9
+
+pluralizeListTitles = false
+summaryLength = 70
+enableEmoji = false
+# Text to display for footnote return links
+footnoteReturnLinkContents = '↩'
+
+# Enable generation of `robots.txt` file?
+enableRobotsTXT = true
+
+# Pagination
+paginate = 10
+paginatePath = 'page'
+
+# RSS
+rssLimit = -1
+
+###############
+# Development #
+###############
+
+# Note: This should be enabled in development the stage
+# Enable `.GitInfo` object for each page?
+enableGitInfo = false
+
+############
+# Security #
+############
+
+# Slightly stricter security config
+[security]
+  [security.exec]
+    allow = ['^go$']

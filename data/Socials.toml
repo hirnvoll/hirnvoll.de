@@ -1,0 +1,29 @@
+# For the `icon`, see SVG.toml
+
+[[socials]]
+    id = "rss"
+    url = "/rss.xml"
+    icon = "rss"
+    title = "RSS"
+    weight = 1
+
+[[socials]]
+    id = "email"
+    url = "mailto:hirnvoll@mailbox.org"
+    icon = "envelope"
+    title = "Email"
+    weight = 2
+
+[[socials]]
+    id = "github"
+    url = "https://github.com/hirnvoll"
+    icon = "github"
+    title = "GitHub"
+    weight = 3
+
+#[[socials]]
+#    id = "twitter"
+#    url = "https://twitter.com/reuixiy"
+#    icon = "twitter"
+#    title = "Twitter"
+#    weight = 4
